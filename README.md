@@ -38,19 +38,6 @@ This project implements a fully responsive landing page with a dynamic navigatio
 - **Mobile-First Approach** - Responsive design strategy
 - **Cross-Browser Compatible** - Works on all modern browsers
 
-## 📸 Screenshots
-
-### Desktop View
-![Desktop Screenshot](https://i.imgur.com/placeholder-desktop.png)
-
-### Mobile View
-![Mobile Screenshot](https://i.imgur.com/placeholder-mobile.png)
-
-### Navigation Effects
-| Scrolled State | Hover Effect | Mobile Menu |
-|----------------|--------------|-------------|
-| ![Scrolled](https://i.imgur.com/placeholder-scrolled.png) | ![Hover](https://i.imgur.com/placeholder-hover.png) | ![Mobile](https://i.imgur.com/placeholder-mobile-menu.png) |
-
 ## 🚀 How to Use
 
 ### Local Development
