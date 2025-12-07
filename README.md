@@ -1,108 +1,81 @@
-# 🌸 BloomTech - Responsive Landing Page
+# 🚀 SkillCraft Technology - Task 1: Responsive Landing Page
 
-A modern, responsive landing page with interactive navigation menu created for SkillCraft Technology Web Development Internship Task 01.
-
-## 📋 Project Description
-
-This project implements a fully responsive landing page with a dynamic navigation menu that meets all requirements for Task 01 of the SkillCraft Technology Web Development Internship. The page features smooth animations, interactive elements, and a visually appealing "cute" design aesthetic.
-
-**Live Demo:** [https://tethi04.github.io/skillcraft-landingpage/](https://tethi04.github.io/skillcraft-landingpage/)
+## 📋 Project Overview
+This is Task 1 of the Web Development Internship at SkillCraft Technology. The project demonstrates the creation of a fully responsive landing page with interactive navigation, modern design, and mobile-friendly layout.
 
 ## ✨ Features Implemented
+- ✅ **Fixed Navigation Bar** - Sticky header that stays visible while scrolling
+- ✅ **Scroll Color Change** - Navigation bar changes background color on scroll
+- ✅ **Hover Effects** - Interactive hover animations on navigation links and cards
+- ✅ **Responsive Design** - Fully optimized for mobile and desktop screens
+- ✅ **Hero Section** - Eye-catching banner with gradient overlay and call-to-action
+- ✅ **Services Section** - Clean card layout showcasing services
+- ✅ **Modern UI/UX** - Clean typography, consistent spacing, and attractive color scheme
 
-### ✅ Navigation Menu Features
-- **Fixed Position Navigation:** Stays visible on all pages while scrolling
-- **Scroll Effect:** Changes color, size, and adds shadow when scrolled
-- **Hover Effects:** Menu items change color with smooth underline animation
-- **Active State:** Current section is highlighted in the navigation
-- **Mobile Responsive:** Collapses into hamburger menu on smaller screens
-- **Smooth Scrolling:** Clicking menu items smoothly scrolls to sections
+## 🛠️ Technologies Used
+- **HTML5** - Semantic markup structure
+- **CSS3** - Flexbox, Grid, media queries, animations
+- **JavaScript (ES6)** - Interactive scroll effects and hover animations
+- **Responsive Design** - Mobile-first approach
 
-### 🎨 Design Features
-- **Modern "Cute" Aesthetic:** Soft pink/blue color scheme with playful elements
-- **Fully Responsive:** Adapts to all screen sizes (desktop, tablet, mobile)
-- **Interactive Elements:** Hover effects on cards, buttons, and social icons
-- **Animated Background:** Floating shapes with parallax effect
-- **Typography:** Clean, readable fonts with visual hierarchy
+## 📁 Project Structure
+     skillcraft-landingpage/
+      │
+      ├── index.html # Main HTML file
+      ├── style.css # All CSS styles
+      ├── script.js # JavaScript functionality
+      └── README.md # Project documentation
 
-### 📱 Page Sections
-1. **Hero Section** - Eye-catching header with call-to-action buttons
-2. **Features Section** - Interactive cards highlighting key services
-3. **Testimonials Section** - Client reviews with profile images
-4. **Footer** - Contact information and social links
+## 🚀 Live Demo
+**[View Live Project](https://tethi04.github.io/skillcraft-landingpage/)**
 
-### 🛠️ Technical Implementation
-- **Pure HTML/CSS/JavaScript** - No external frameworks
-- **CSS Variables** - Consistent theming throughout
-- **CSS Grid & Flexbox** - Modern layout techniques
-- **Mobile-First Approach** - Responsive design strategy
-- **Cross-Browser Compatible** - Works on all modern browsers
+## 📱 Responsive Behavior
+- **Desktop**: Full navigation menu with hover effects
+- **Tablet**: Optimized layout for medium screens
+- **Mobile**: Simplified navigation with stacked content
 
-## 🚀 How to Use
+## 🎯 Key Implementation Details
+1. **Navigation Menu**
+   - Fixed position stays visible on all pages
+   - Background color changes on scroll
+   - Smooth hover animations on menu items
 
-### Local Development
+2. **Hero Section**
+   - Full-viewport height with gradient overlay
+   - Responsive background image from Unsplash
+   - Call-to-action button with hover effect
+
+3. **Features Section**
+   - Flexbox-based card layout
+   - Responsive grid that stacks on mobile
+   - Card hover animations
+
+4. **JavaScript Functionality**
+   - Scroll event listener for navigation effects
+   - Hover animations for interactive elements
+   - Smooth transitions and transformations
+
+## 📝 How to Run Locally
 1. Clone the repository:
-```bash
-git clone https://github.com/tethi04/skillcraft-landingpage.git
-```
+   ```bash
+   git clone https://github.com/tethi04/skillcraft-landingpage.git
 
-2. Navigate to the project folder:
-```bash
-cd skillcraft-landingpage
-```
+2. Open index.html in your browser
 
-3. Open `index.html` in your browser
+3. No build process or dependencies required
 
-### File Structure
-```
-skillcraft-landingpage/
-├── index.html          # Main HTML file
-├── style.css           # All styling
-├── script.js           # Interactive features
-└── README.md           # This file
-```
+📊 Task Requirements Checklist
+•Create responsive landing page
+•Interactive navigation menu
+•Menu changes color/style on scroll
+•Fixed position navigation
+•Visible on all pages
+•Mobile responsive design
+•Clean and modern UI
 
-## 🔧 Technologies Used
+👨‍💻 Developer
+Tethi Biswas
+Web Development Intern, SkillCraft Technology
+December 2025
 
-- **HTML5** - Semantic markup
-- **CSS3** - Styling with variables, grid, flexbox, animations
-- **JavaScript (ES6)** - Interactive functionality
-- **Font Awesome** - Icons
-- **Google Fonts** - Typography (Poppins, Comic Neue)
-
-## 📱 Browser Support
-
-- Chrome (latest)
-- Firefox (latest)
-- Safari (latest)
-- Edge (latest)
-- Mobile browsers (iOS Safari, Chrome for Android)
-
-## 📝 Task Requirements Checklist
-
-- [x] Create a responsive landing page
-- [x] Interactive navigation menu with fixed position
-- [x] Menu changes color/style when scrolled
-- [x] Hover effects on menu items
-- [x] Visible on all pages (single page application)
-- [x] Mobile-responsive design
-- [x] Clean, modern aesthetic
-
-## 🤝 Contributing
-
-This is a task submission for SkillCraft Technology Internship. While not open for contributions, feel free to fork and adapt for your own projects!
-
-## 📄 License
-
-This project is created for educational purposes as part of the SkillCraft Technology Web Development Internship.
-
-## 👩‍💻 Author
-
-**Tethi Biswas**
-- GitHub: [@tethi04](https://github.com/tethi04)
-- SkillCraft Web Development Intern
-- Offer ID: SCT/DEC25/0751
-
----
-
-*Task 01 - Web Development Internship | SkillCraft Technology*
+  
