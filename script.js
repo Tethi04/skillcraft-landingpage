@@ -1,138 +1,53 @@
-// Wait for DOM to load
+// JavaScript for Task 1 - Responsive Landing Page
 document.addEventListener('DOMContentLoaded', function() {
     
-    // ========== NAVIGATION SCROLL EFFECT ==========
-    const navbar = document.getElementById('navbar');
-    const navLinks = document.querySelectorAll('.nav-link');
-    const hamburger = document.getElementById('hamburger');
-    const navMenu = document.querySelector('.nav-menu');
+    // Navigation scroll effect
+    const nav = document.querySelector('nav');
+    const navLinks = document.querySelectorAll('.nav-links a');
     
-    // Change navbar style on scroll
     window.addEventListener('scroll', function() {
-        if (window.scrollY > 50) {
-            navbar.classList.add('scrolled');
+        if (window.scrollY > 100) {
+            nav.style.backgroundColor = '#0f1123';
+            nav.style.boxShadow = '0 2px 10px rgba(0,0,0,0.1)';
         } else {
-            navbar.classList.remove('scrolled');
+            nav.style.backgroundColor = '#1a1a2e';
+            nav.style.boxShadow = 'none';
         }
-        
-        // Update active nav link based on scroll position
-        updateActiveNavLink();
     });
     
-    // ========== MOBILE MENU TOGGLE ==========
-    hamburger.addEventListener('click', function() {
-        hamburger.classList.toggle('active');
-        navMenu.classList.toggle('active');
-    });
-    
-    // Close mobile menu when clicking a link
-    navLinks.forEach(link => {
-        link.addEventListener('click', function() {
-            hamburger.classList.remove('active');
-            navMenu.classList.remove('active');
-        });
-    });
-    
-    // ========== SMOOTH SCROLLING ==========
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener('click', function(e) {
-            e.preventDefault();
-            
-            const targetId = this.getAttribute('href');
-            if (targetId === '#') return;
-            
-            const targetElement = document.querySelector(targetId);
-            if (targetElement) {
-                window.scrollTo({
-                    top: targetElement.offsetTop - 80,
-                    behavior: 'smooth'
-                });
-            }
-        });
-    });
-    
-    // ========== ACTIVE NAV LINK ON SCROLL ==========
-    function updateActiveNavLink() {
-        let currentSection = '';
-        const sections = document.querySelectorAll('section');
-        
-        sections.forEach(section => {
-            const sectionTop = section.offsetTop - 100;
-            const sectionHeight = section.clientHeight;
-            
-            if (window.scrollY >= sectionTop && window.scrollY < sectionTop + sectionHeight) {
-                currentSection = '#' + section.getAttribute('id');
-            }
-        });
-        
-        navLinks.forEach(link => {
-            link.classList.remove('active');
-            if (link.getAttribute('href') === currentSection) {
-                link.classList.add('active');
-            }
-        });
-        
-        // Special case for home
-        if (window.scrollY < 100) {
-            document.querySelector('a[href="#home"]').classList.add('active');
-        }
-    }
-    
-    // ========== NAV LINK HOVER EFFECT ==========
+    // Hover effect for navigation links
     navLinks.forEach(link => {
         link.addEventListener('mouseenter', function() {
-            this.style.color = getComputedStyle(document.documentElement).getPropertyValue('--primary').trim();
+            this.style.transform = 'translateY(-2px)';
         });
         
         link.addEventListener('mouseleave', function() {
-            if (!this.classList.contains('active')) {
-                this.style.color = '';
-            }
+            this.style.transform = 'translateY(0)';
         });
     });
     
-    // ========== NAV BUTTON HOVER EFFECT ==========
-    const navButton = document.querySelector('.nav-btn');
-    
-    navButton.addEventListener('mouseenter', function() {
-        this.style.transform = 'scale(1.05)';
-    });
-    
-    navButton.addEventListener('mouseleave', function() {
-        this.style.transform = 'scale(1)';
-    });
-    
-    // ========== FLOATING SHAPES ANIMATION ==========
-    const shapes = document.querySelectorAll('.floating-shape');
-    
-    shapes.forEach((shape, index) => {
-        // Add random initial rotation
-        shape.style.transform = `rotate(${Math.random() * 360}deg)`;
-        
-        // Add mouse move effect
-        document.addEventListener('mousemove', function(e) {
-            const x = e.clientX / window.innerWidth;
-            const y = e.clientY / window.innerHeight;
-            
-            shape.style.transform = `translate(${x * 20 - 10}px, ${y * 20 - 10}px) rotate(${x * 20}deg)`;
+    // Button click effect
+    const button = document.querySelector('.btn');
+    if (button) {
+        button.addEventListener('click', function(e) {
+            e.preventDefault();
+            this.style.transform = 'scale(0.95)';
+            setTimeout(() => {
+                this.style.transform = 'scale(1)';
+            }, 150);
         });
-    });
+    }
     
-    // ========== FEATURE CARDS HOVER EFFECT ==========
-    const featureCards = document.querySelectorAll('.feature-card');
-    
-    featureCards.forEach(card => {
+    // Card hover animation
+    const cards = document.querySelectorAll('.card');
+    cards.forEach(card => {
         card.addEventListener('mouseenter', function() {
-            const icon = this.querySelector('.feature-icon');
-            icon.style.transform = 'scale(1.1) rotate(5deg)';
+            this.style.transform = 'translateY(-10px)';
+            this.style.transition = 'transform 0.3s ease';
         });
         
         card.addEventListener('mouseleave', function() {
-            const icon = this.querySelector('.feature-icon');
-            icon.style.transform = 'scale(1) rotate(0deg)';
+            this.style.transform = 'translateY(0)';
         });
     });
-    
-    // Initialize
-    updateActiveNavLink();
 });
