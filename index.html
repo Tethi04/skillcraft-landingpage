@@ -3,39 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SkillCraft Web Dev - Task 1</title>
+    <title>SkillCraft Web Dev - Task 1: Responsive Landing Page</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
 
-    <nav>
+    <nav class="navbar">
         <div class="logo">SkillCraft Dev</div>
         <ul class="nav-links">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="#" class="nav-item">Home</a></li>
+            <li><a href="#" class="nav-item">Services</a></li>
+            <li><a href="#" class="nav-item">About</a></li>
+            <li><a href="#" class="nav-item">Contact</a></li>
         </ul>
+        <div class="menu-toggle">
+            <i class="fas fa-bars"></i>
+        </div>
     </nav>
 
     <header class="hero">
         <h1>Building the Future Web</h1>
         <p>Welcome to my first internship project. I create responsive, modern, and user-friendly websites.</p>
-        <a href="#" class="btn">View My Work</a>
+        <a href="#features" class="btn">View My Work</a>
     </header>
 
-    <section class="features">
+    <section id="features" class="features">
         <h2>My Services</h2>
         <div class="feature-grid">
             <div class="card">
+                <i class="fas fa-paint-brush"></i>
                 <h3>Web Design</h3>
                 <p>Creating beautiful layouts using HTML & CSS.</p>
             </div>
             <div class="card">
+                <i class="fas fa-code"></i>
                 <h3>Development</h3>
                 <p>Building functional sites with JavaScript.</p>
             </div>
             <div class="card">
+                <i class="fas fa-chart-line"></i>
                 <h3>SEO</h3>
                 <p>Optimizing content for search engines.</p>
             </div>
@@ -44,6 +51,10 @@
 
     <footer>
         <p>&copy; 2025 Tethi Biswas | SkillCraft Technology Intern</p>
+        <p class="footer-links">
+            <a href="https://github.com/tethi04" target="_blank"><i class="fab fa-github"></i> GitHub</a> |
+            <a href="https://skillcraft-tech.my.canva.site" target="_blank">SkillCraft</a>
+        </p>
     </footer>
 
     <script src="script.js"></script>
